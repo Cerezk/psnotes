@@ -1,4 +1,4 @@
-psnotes -- GNOME Fork
+psnotes - GNOME Fork
 =======
 
 Notes, plain and simple. 
