@@ -89,9 +89,9 @@ public class Main : Window {
 		this.lastKeyName = "";
 		this.firstLine = "";
 
-		this.title = "P.S. Notes.";
+		this.title = "P.S. Notes";
 		this.headerBar = new Gtk.HeaderBar();
-		headerBar.set_title("P.S. Notes.");
+		//headerBar.set_title("P.S. Notes");
 		headerBar.set_show_close_button(true);
 		this.set_titlebar(headerBar);
 		this.window_position = WindowPosition.CENTER;
@@ -185,7 +185,7 @@ public class Main : Window {
 				this.showKeyboardShortcuts();
 			});
 
-			var menuAboutToolbar = new Gtk.MenuItem.with_label("About P.S. Notes.");
+			var menuAboutToolbar = new Gtk.MenuItem.with_label("About P.S. Notes");
 			menuAboutToolbar.activate.connect(() => {
 				this.menuAboutClicked();
 			});
@@ -962,7 +962,7 @@ public class Main : Window {
 
 	private void menuAboutClicked() {
 		var about = new AboutDialog();
-		about.set_program_name("P.S. Notes.");
+		about.set_program_name("P.S. Notes");
 		about.comments = "Notes, plain and simple.";
 		about.website = "http://burnsoftware.wordpress.com/p-s-notes";
 		about.logo_icon_name = "com.github.thejambi.psnotes";
